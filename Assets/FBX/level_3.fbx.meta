@@ -56,6 +56,15 @@ ModelImporter:
     4300012: polySurface68
     4300014: polySurface76
     4300016: polySurface77
+    6400000: polySurface67
+    6400002: polySurface68
+    6400004: polySurface69
+    6400006: polySurface70
+    6400008: polySurface71
+    6400010: polySurface72
+    6400012: polySurface73
+    6400014: polySurface76
+    6400016: polySurface77
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -83,7 +92,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0

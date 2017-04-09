@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 04a4c10a0d244974a8c7d3aea4a59b5d
-timeCreated: 1491747043
+guid: 4c03ea466427c6f49b751a93f32f12a3
+timeCreated: 1491750955
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -37,12 +37,6 @@ ModelImporter:
     4300006: polySurface56
     4300008: polySurface58
     4300010: polySurface78
-    6400000: polySurface53
-    6400002: polySurface54
-    6400004: polySurface55
-    6400006: polySurface56
-    6400008: polySurface58
-    6400010: polySurface78
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -70,7 +64,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0

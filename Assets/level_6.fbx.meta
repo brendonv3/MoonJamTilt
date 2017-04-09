@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 7e4035a432c42c04089bfd54e1d429aa
-timeCreated: 1491747043
+guid: 54c3bc5bc5a78a84786c8ef6080903a8
+timeCreated: 1491751083
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -8,59 +8,75 @@ ModelImporter:
     100000: Blocks_2:ZBrushPolyMesh3D
     100002: //RootNode
     100004: pCube2
-    100006: polySurface4
-    100008: polySurface78
-    100010: polySurface79
-    100012: polySurface80
-    100014: polySurface81
-    100016: polySurface82
-    100018: polySurface83
-    100020: polySurface84
-    100022: transform1
+    100006: polySurface85
+    100008: polySurface86
+    100010: polySurface87
+    100012: polySurface88
+    100014: polySurface89
+    100016: polySurface90
+    100018: polySurface91
+    100020: polySurface92
+    100022: polySurface93
+    100024: polySurface94
+    100026: polySurface95
     400000: Blocks_2:ZBrushPolyMesh3D
     400002: //RootNode
     400004: pCube2
-    400006: polySurface4
-    400008: polySurface78
-    400010: polySurface79
-    400012: polySurface80
-    400014: polySurface81
-    400016: polySurface82
-    400018: polySurface83
-    400020: polySurface84
-    400022: transform1
-    2300000: polySurface4
-    2300002: polySurface78
-    2300004: polySurface79
-    2300006: polySurface80
-    2300008: polySurface81
-    2300010: polySurface82
-    2300012: polySurface83
-    2300014: polySurface84
-    3300000: polySurface4
-    3300002: polySurface78
-    3300004: polySurface79
-    3300006: polySurface80
-    3300008: polySurface81
-    3300010: polySurface82
-    3300012: polySurface83
-    3300014: polySurface84
-    4300000: polySurface4
-    4300002: polySurface81
-    4300004: polySurface82
-    4300006: polySurface83
-    4300008: polySurface84
-    4300010: polySurface78
-    4300012: polySurface79
-    4300014: polySurface80
-    6400000: polySurface4
-    6400002: polySurface78
-    6400004: polySurface79
-    6400006: polySurface80
-    6400008: polySurface81
-    6400010: polySurface82
-    6400012: polySurface83
-    6400014: polySurface84
+    400006: polySurface85
+    400008: polySurface86
+    400010: polySurface87
+    400012: polySurface88
+    400014: polySurface89
+    400016: polySurface90
+    400018: polySurface91
+    400020: polySurface92
+    400022: polySurface93
+    400024: polySurface94
+    400026: polySurface95
+    2300000: polySurface85
+    2300002: polySurface86
+    2300004: polySurface87
+    2300006: polySurface88
+    2300008: polySurface89
+    2300010: polySurface90
+    2300012: polySurface91
+    2300014: polySurface92
+    2300016: polySurface93
+    2300018: polySurface94
+    2300020: polySurface95
+    3300000: polySurface85
+    3300002: polySurface86
+    3300004: polySurface87
+    3300006: polySurface88
+    3300008: polySurface89
+    3300010: polySurface90
+    3300012: polySurface91
+    3300014: polySurface92
+    3300016: polySurface93
+    3300018: polySurface94
+    3300020: polySurface95
+    4300000: polySurface87
+    4300002: polySurface88
+    4300004: polySurface89
+    4300006: polySurface90
+    4300008: polySurface91
+    4300010: polySurface93
+    4300012: polySurface94
+    4300014: polySurface95
+    4300016: polySurface85
+    4300018: polySurface86
+    4300020: polySurface92
+    6400000: polySurface85
+    6400002: polySurface86
+    6400004: polySurface87
+    6400006: polySurface88
+    6400008: polySurface89
+    6400010: polySurface90
+    6400012: polySurface91
+    6400014: polySurface92
+    6400016: polySurface93
+    6400018: polySurface94
+    6400020: polySurface95
     9500000: //RootNode
   materials:
     importMaterials: 1
