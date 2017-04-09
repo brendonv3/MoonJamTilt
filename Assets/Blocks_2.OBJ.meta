@@ -1,67 +1,17 @@
 fileFormatVersion: 2
-guid: bc11666b167a53346ae69a8b403b97a2
-timeCreated: 1491751028
+guid: 741e38652b2938c43a0b5e726da42752
+timeCreated: 1491754256
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: Blocks_2:ZBrushPolyMesh3D
-    100002: //RootNode
-    100004: pCube2
-    100006: polySurface4
-    100008: polySurface78
-    100010: polySurface79
-    100012: polySurface80
-    100014: polySurface81
-    100016: polySurface82
-    100018: polySurface83
-    100020: polySurface84
-    100022: transform1
-    400000: Blocks_2:ZBrushPolyMesh3D
-    400002: //RootNode
-    400004: pCube2
-    400006: polySurface4
-    400008: polySurface78
-    400010: polySurface79
-    400012: polySurface80
-    400014: polySurface81
-    400016: polySurface82
-    400018: polySurface83
-    400020: polySurface84
-    400022: transform1
-    2300000: polySurface4
-    2300002: polySurface78
-    2300004: polySurface79
-    2300006: polySurface80
-    2300008: polySurface81
-    2300010: polySurface82
-    2300012: polySurface83
-    2300014: polySurface84
-    3300000: polySurface4
-    3300002: polySurface78
-    3300004: polySurface79
-    3300006: polySurface80
-    3300008: polySurface81
-    3300010: polySurface82
-    3300012: polySurface83
-    3300014: polySurface84
-    4300000: polySurface4
-    4300002: polySurface81
-    4300004: polySurface82
-    4300006: polySurface83
-    4300008: polySurface84
-    4300010: polySurface78
-    4300012: polySurface79
-    4300014: polySurface80
-    6400000: polySurface4
-    6400002: polySurface78
-    6400004: polySurface79
-    6400006: polySurface80
-    6400008: polySurface81
-    6400010: polySurface82
-    6400012: polySurface83
-    6400014: polySurface84
-    9500000: //RootNode
+    100000: //RootNode
+    100002: ZBrushPolyMesh3D
+    400000: //RootNode
+    400002: ZBrushPolyMesh3D
+    2300000: ZBrushPolyMesh3D
+    3300000: ZBrushPolyMesh3D
+    4300000: ZBrushPolyMesh3D
   materials:
     importMaterials: 1
     materialName: 0
@@ -88,7 +38,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
@@ -124,7 +74,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
