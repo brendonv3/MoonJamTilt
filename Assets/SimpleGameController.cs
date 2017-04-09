@@ -4,30 +4,51 @@ using UnityEngine;
 
 public class SimpleGameController : MonoBehaviour {
 
-	public SimpleTeleporter teleporter;
-	public Transform ball;
+	GameObject _ball;
+	GameObject ball{
+		get{
+			if (_ball == null)
+				_ball = Instantiate(Resources.Load ("Prefabs/Ball") as GameObject);
+
+			return _ball;
+		}
+	}
+
+	public List<Level> allLevels;
+	public List<SimpleTeleporter> allTeleporters;
 
 	// Use this for initialization
 	void Start () {
-		teleporter.triggeredA += HandleATriggered;
-		teleporter.triggeredB += HandleBTriggered;
+		for (int i = 0; i < allTeleporters.Count; i++) 
+		{
+			allTeleporters[i].triggeredA += HandleATriggered;
+			allTeleporters[i].triggeredB += HandleBTriggered;
+		}
 
+		for(int i=0; i<allLevels.Count; i++)
+		{
+			allLevels [i].FinishedLoading += HandleLevelFinishedLoading;
+		}
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+	{
 		
 	}
 
-	public void HandleATriggered()
+	public void HandleATriggered(SimpleTeleporter teleporter)
 	{
-		Debug.Log ("a");
-		ball.position = teleporter.b.transform.position + Vector3.up;
+		ball.transform.position = teleporter.b.transform.position + Vector3.up;
 	}
 
-	public void HandleBTriggered()
+	public void HandleBTriggered(SimpleTeleporter teleporter)
 	{
-		Debug.Log ("b");
-		ball.position = teleporter.a.transform.position + Vector3.up;
+		ball.transform.position = teleporter.a.transform.position + Vector3.up;
+	}
+
+	public void HandleLevelFinishedLoading(Level level)
+	{
+		ball.transform.position = (level.spawnPoint != null ? level.spawnPoint.transform.position : level.root.transform.position) + new Vector3 (0f,.1f,0f);
 	}
 }
