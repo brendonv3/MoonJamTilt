@@ -15,6 +15,7 @@ public class SimplePosition : MonoBehaviour {
 		cachedPosition = this.transform.localPosition;
 
 		//	Start tween
+		Debug.Log("start");
 
 		Out ();
 	}
