@@ -5,6 +5,7 @@ using DG.Tweening;
 
 public class Level : MonoBehaviour {
 
+	public Transform spawnPoint;
 	public Transform root;
 	float hiddenScale=.001f;
 
@@ -42,7 +43,8 @@ public class Level : MonoBehaviour {
 
 	public void ShowOnComplete()
 	{
-		ball.transform.position = root.transform.position + new Vector3 (0f,.1f,0f);
+		
+		ball.transform.position = (spawnPoint != null ? spawnPoint.transform.position : root.transform.position) + new Vector3 (0f,.1f,0f);
 	}
 
 }
