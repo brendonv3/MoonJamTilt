@@ -49,6 +49,6 @@ public class SimpleGameController : MonoBehaviour {
 
 	public void HandleLevelFinishedLoading(Level level)
 	{
-		ball.transform.position = (level.spawnPoint != null ? level.spawnPoint.transform.position : level.root.transform.position) + new Vector3 (0f,.1f,0f);
+		ball.transform.position = (level.spawnPoint != null ? level.spawnPoint.transform.position : level.root.transform.position) + new Vector3 (0f,.07f,0f);
 	}
 }
