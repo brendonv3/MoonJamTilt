@@ -8,8 +8,8 @@ public class SimpleTeleporter : MonoBehaviour {
 	public TeleporterNode a;
 	public TeleporterNode b;
 
-	public Action triggeredA;
-	public Action triggeredB;
+	public Action<SimpleTeleporter> triggeredA;
+	public Action<SimpleTeleporter> triggeredB;
 
 	// Use this for initialization
 	void Start () {
@@ -25,12 +25,12 @@ public class SimpleTeleporter : MonoBehaviour {
 	public void HandleATriggered(){
 		Debug.Log ("atriggeredS");
 		if (triggeredA != null)
-			triggeredA ();
+			triggeredA (this);
 	}
 
 	public void HandleBTriggered(){
 		Debug.Log ("bTriggered");
 		if (triggeredB != null)
-			triggeredB ();
+			triggeredB (this);
 	}
 }
