@@ -30,14 +30,14 @@ public class Level : MonoBehaviour {
 
 	public void Show(){
 		DOTween.Kill (root);
-		root.DOScale (1f, 1f).OnComplete(()=>ShowOnComplete());
+		root.DOScale (1f, .3f).SetEase(DG.Tweening.Ease.InOutQuint).OnComplete(()=>ShowOnComplete());
 		//root.transform.DOScale ();
 	}
 
 	public void Hide(){
 		Destroy (ball);
 		DOTween.Kill (root);
-		root.DOScale (.001f, 1f);
+		root.DOScale (.001f, .3f).SetEase(DG.Tweening.Ease.InOutQuint);
 	}
 
 	public void ShowOnComplete()
