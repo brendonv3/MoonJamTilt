@@ -9,8 +9,8 @@ public class CubeSideFacingDetect : MonoBehaviour {
 	void Awake(){
 		s_ins = this;
 
-		for (int i = 0; i < scenes.Length; i++)
-			scenes [i].SetActive (false);
+		for (int i = 0; i < levels.Length; i++)
+			levels [i].Hide ();
 	}
 	public static CubeSideFacingDetect ins {
 		get { return s_ins; }
@@ -18,7 +18,7 @@ public class CubeSideFacingDetect : MonoBehaviour {
 
 	// 0-front   1-back    2-top    3-bottom    4-left    5-right
 	public Transform [] sides;
-	public GameObject [] scenes;
+	public Level [] levels;
 
 	bool isActive = true;
 	int lastNearestIndex = -1;
@@ -48,14 +48,14 @@ public class CubeSideFacingDetect : MonoBehaviour {
 	}
 
 	void TriggerEvent(int nearestIndex){
-		Debug.LogWarning ("nearestIndex = "+nearestIndex);
+		//Debug.LogWarning ("nearestIndex = "+nearestIndex);
 		if (nearestIndex != lastNearestIndex) {
 			if (lastNearestIndex >= 0) {
-				scenes [lastNearestIndex].SetActive (false);
+				levels [lastNearestIndex].Hide();
 			}
 			lastNearestIndex = nearestIndex;
 			Debug.LogWarning ("New Near = "+lastNearestIndex);
-			scenes [lastNearestIndex].SetActive (true);
+			levels [lastNearestIndex].Show ();
 		}
 	}
 }
