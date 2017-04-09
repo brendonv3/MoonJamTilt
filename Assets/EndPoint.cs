@@ -8,7 +8,6 @@ public class EndPoint : MonoBehaviour {
 
 	public void OnTriggerEnter(Collider col)
 	{
-		Debug.Log ("HitEndPoint");
 		particle.Play();
 	}
 
@@ -21,4 +20,5 @@ public class EndPoint : MonoBehaviour {
 	void Update () {
 		
 	}
+
 }

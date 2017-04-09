@@ -10,6 +10,7 @@ public class Level : MonoBehaviour {
 	public Transform root;
 	float hiddenScale=.001f;
 	public Action<Level> FinishedLoading;
+	public EndPoint endPoint;
 
 	// Use this for initialization
 	void Start () {

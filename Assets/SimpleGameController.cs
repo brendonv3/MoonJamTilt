@@ -13,9 +13,11 @@ public class SimpleGameController : MonoBehaviour {
 			return _ball;
 		}
 	}
-
+    public Transform multiTargetRoot;
 	public List<Level> allLevels;
 	public List<SimpleTeleporter> allTeleporters;
+    public Level activeLevel;
+
 
 	// Use this for initialization
 	void Start () {
@@ -34,7 +36,13 @@ public class SimpleGameController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		
+		if (Input.GetMouseButton (0)) {
+			for (int i = 0; i < allLevels.Count; i++)
+				allLevels [i].endPoint.OnTriggerEnter (null);
+		}
+
+        if (Vector3.Distance(ball.transform.position, multiTargetRoot.position) > .5f)
+            HandleLevelFinishedLoading(activeLevel);
 	}
 
 	public void HandleATriggered(SimpleTeleporter teleporter)
@@ -49,6 +57,7 @@ public class SimpleGameController : MonoBehaviour {
 
 	public void HandleLevelFinishedLoading(Level level)
 	{
+        activeLevel = level;
 		ball.transform.position = (level.spawnPoint != null ? level.spawnPoint.transform.position : level.root.transform.position) + new Vector3 (0f,.07f,0f);
 	}
 }
